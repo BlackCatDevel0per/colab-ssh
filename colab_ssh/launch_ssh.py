@@ -95,6 +95,7 @@ we highly recommend that update your code by following this documentation https:
     User root
     Port {port}
     ''')
+    print(f"Command: ssh root@{host} -p {port}")
   else:
     print(proc.stdout.readlines())
     raise Exception(
